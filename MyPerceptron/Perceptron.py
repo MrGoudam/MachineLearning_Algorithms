@@ -30,11 +30,11 @@ class MyPerceptron:
     def fit(self, X, y, eras=2000):
         '''
         :param X: Содержит входной набор данных для обучения
-        :param y: Содеожит выходной набор данных для обучения
-        :param eras: Количство эпох(итераций) обучения
+        :param y: Содержит выходной набор данных для обучения
+        :param eras: Количество эпох(итераций) обучения
         :return:
         '''
-        # Метод обратоного распространения ошибки
+        # Метод обратного распространения ошибки
         for i in range(eras):
             input_layer = X
             output = self.ACTIVATIONS[self.activation](np.dot(input_layer, self.synaptic_weights))
